@@ -1,2 +1,2 @@
 # DVAMDA
- 
+ python main.py
