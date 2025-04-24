@@ -37,10 +37,6 @@ def initialize_DVAmodel_and_optimizer(args, num_features, model_name):
     
     if model_name == "SAGEEncoder":
         encoder = SAGEEncoder(in_channels = num_features, hidden_channels=128, out_channels=128).to(device)
-    elif model_name == "GINEncoder":
-        encoder = GINEncoder(in_channels = num_features, hidden_channels=128, out_channels=128).to(device)
-    elif model_name == "GATEncoder":
-        encoder = GATEncoder(in_channels = num_features, hidden_channels=128, out_channels=128).to(device)
     elif model_name == "GCNEncoder":
         encoder = GCNEncoder(in_channels = num_features, hidden_channels=128, out_channels=128).to(device)
 
